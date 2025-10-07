@@ -1,7 +1,8 @@
 import { NextRequest } from "next/server";
-import { CreateAttemptSchema } from "@/lib/schema";
-import { createAttempt } from "@/lib/sheets";
-import { jsonRes } from "@/lib/util";
+import { CreateAttemptSchema } from "../../../lib/schema";
+import { createAttempt } from "../../../lib/sheets";
+import { jsonRes } from "../../../lib/util";
+
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -10,3 +11,4 @@ export async function POST(req: NextRequest) {
   const r = await createAttempt(parsed.data);
   return jsonRes({ attemptId: r.id, started_at: r.started_at });
 }
+
