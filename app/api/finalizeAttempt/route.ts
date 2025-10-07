@@ -1,7 +1,8 @@
 import { NextRequest } from "next/server";
-import { FinalizeSchema } from "@/lib/schema";
-import { finalizeAttempt } from "@/lib/sheets";
-import { jsonRes } from "@/lib/util";
+import { FinalizeSchema } from "../../../lib/schema";
+import { finalizeAttempt } from "../../../lib/sheets";
+import { jsonRes } from "../../../lib/util";
+
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
