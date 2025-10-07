@@ -1,1 +1,16 @@
-
+{
+  "name": "ielts-mock",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 5173",
+    "build": "next build",
+    "start": "next start -p 5173"
+  },
+  "dependencies": {
+    "googleapis": "^131.0.0",
+    "next": "14.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zod": "^3.23.8"
+  }
+}
