@@ -1,7 +1,8 @@
 import { NextRequest } from "next/server";
-import { SaveSkillSchema } from "@/lib/schema";
-import { saveSkillOverwrite } from "@/lib/sheets";
-import { jsonRes } from "@/lib/util";
+import { SaveSkillSchema } from "../../../lib/schema";
+import { saveSkillOverwrite } from "../../../lib/sheets";
+import { jsonRes } from "../../../lib/util";
+
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
