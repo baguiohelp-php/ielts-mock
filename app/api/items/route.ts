@@ -1,7 +1,8 @@
 import { NextRequest } from "next/server";
-import { ItemsQuerySchema } from "@/lib/schema";
-import { fetchBank } from "@/lib/sheets";
-import { jsonRes } from "@/lib/util";
+import { ItemsQuerySchema } from "../../../lib/schema";
+import { fetchBank } from "../../../lib/sheets";
+import { jsonRes } from "../../../lib/util";
+
 
 export async function GET(req: NextRequest) {
   const url = new URL(req.url);
